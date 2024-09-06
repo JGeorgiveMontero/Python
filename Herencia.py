@@ -11,10 +11,14 @@ class Policia(Ciudadano):
     def __init__(self,nombre):
         super().__init__(nombre,"Policia")
 
-
+    def pedir_refuerzos(self):
+        print(f"el Agente policial: {self.nombre} pidiendo refuerzos")
+    def saludar(self):
+        print(f"Hola soy el agente: {self.nombre} y les deseo un excelente dia")
 a = Medico("Javier")
 b = Policia("Ana")
 c = Ciudadano("Jose","Ingeniero")
 a.saludar()
 b.saludar()
-c.saludar()
+b.pedir_refuerzos()
+b.saludar()
